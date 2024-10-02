@@ -14,12 +14,7 @@
             "x": 0.98,
             "y": 0.5,
             "uniqueID": 1727877086944,
-            "ioValues": [
-                {
-                    "name": "number or geometry",
-                    "ioValue": 1727877860680
-                }
-            ],
+            "ioValues": [],
             "description": "Connect geometry here to make it available in the next level up. "
         },
         {
@@ -173,8 +168,8 @@
         {
             "atomType": "Rotate",
             "name": "Rotate",
-            "x": 0.44802207911683534,
-            "y": 0.36585365853658536,
+            "x": 0.45170193192272307,
+            "y": 0.39329268292682923,
             "uniqueID": 1727877964589,
             "ioValues": [
                 {
@@ -195,6 +190,24 @@
                 }
             ],
             "description": "Rotates the input geometry around the X, Y, or Z axis. Inputs are degrees."
+        },
+        {
+            "atomType": "Extrude",
+            "name": "Extrude",
+            "x": 0.7019319227230911,
+            "y": 0.6341463414634146,
+            "uniqueID": 1727878202544,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1727877964589
+                },
+                {
+                    "name": "height",
+                    "ioValue": 10
+                }
+            ],
+            "description": "Extrudes a 2D shape. Input can be negitive. "
         }
     ],
     "allConnectors": [
@@ -232,6 +245,13 @@
             "ap2Primary": false,
             "ap1ID": 1727877860680,
             "ap2ID": 1727877086944
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 1727877964589,
+            "ap2ID": 1727878202544
         }
     ],
     "unitsKey": "Inches",
